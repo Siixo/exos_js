@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module JS</title>
+  </head>
+  <body>
+    <header id="header"></header>
+    <main class="">
+      <!-- Section Hero -->
+      <div
+        id="hero"
+        class="w-screen h-screen flex flex-col items-center justify-center text-white text-9xl bg-[url(/src/img/timeBoard.gif)]"
+      >
+        <h1 id="bouncy-text" class="">Module JavaScript</h1>
+        <a href="#EXERCICES" class="animate-bounce mt-2">
+          <svg
+            class="h-40"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M7 10L12 15L17 10"
+              stroke="#fff"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+      </div>
+
+      <!-- Section Exercices -->
+      <div class="h-auto w-full text-white bg-blue-950">
+        <h1 class="text-4xl text-center p-10" id="EXERCICES">Exercices</h1>
+        <div
+          class="cards-container grid grid-cols-2 gap-10 p-8 text-black items-start"
+        >
+          <!-- Exercice 1 -->
+          <div class="card h-78 rounded-2xl bg-gray-50 m-4 p-2">
+            <h2 class="m-2 text-2xl text-center">Exercice 1:</h2>
+            <p class="text-center">On change le texte à chaque click</p>
+            <div class="flex justify-center items-center">
+              <a
+                id="bouton1"
+                class="inline-block rounded-sm border border-red-600 bg-red-600 px-12 py-3 m-4 text-sm font-medium text-white hover:bg-red-600/50 hover:text-red-600 focus:ring-3 focus:outline-hidden"
+                href="#"
+              >
+                <span id="element"></span>
+              </a>
+            </div>
+          </div>
+          <!-- Exercice 2 -->
+          <div
+            class="card h-78 rounded-2xl bg-gray-50 flex flex-col m-4 p-2 justify-center items-center gap-4"
+          >
+            <h1 class="text-2xl">Exercice 2:</h1>
+            <h2 class="">
+              On désactive le bouton si le texte fait plus de 5 charactères
+            </h2>
+            <p class="text-sm">Le contenu est sauvegardé dans localStorage</p>
+            <textarea
+              id="Textarea"
+              class="border border-gray-400 rounded p-2 w-64 h-24"
+              placeholder="Type something..."
+            ></textarea>
+            <button
+              id="myButton"
+              class="inline-block rounded-sm border border-red-600 bg-red-600 px-12 py-3 m-4 text-sm font-medium text-white hover:bg-red-600/50 hover:text-red-600 focus:ring-3 focus:outline-hidden hover:cursor-pointer"
+            >
+              Clear
+            </button>
+          </div>
+          <!-- Exercice 3 -->
+          <div
+            class="card h-78 rounded-2xl bg-gray-50 flex flex-col m-4 p-2 justify-center items-center gap-4"
+          >
+            <h1 class="text-2xl">Exercice 3:</h1>
+            <h2 class="">Construction d'une timeline</h2>
+            <a href="/src/exos/html/timeline.html">
+              <button
+                id="timelineButton"
+                class="inline-block rounded-sm border border-red-600 bg-red-600 px-12 py-3 m-4 text-sm font-medium text-white hover:bg-red-600/50 hover:text-red-600 focus:ring-3 focus:outline-hidden hover:cursor-pointer"
+              >
+                Voir la timeline
+              </button>
+            </a>
+          </div>
+          <!-- Exercice IMC -->
+          <div>
+            <div
+              class="card h-78 rounded-2xl bg-gray-50 flex flex-col m-4 p-4 justify-center items-center gap-4"
+            >
+              <h1 class="text-2xl">Exercice IMC:</h1>
+              <h2 class="">
+                Calcul de l'Indice de Masse Corporelle (IMC) et gestion d'une
+                liste de personnes:
+              </h2>
+              <div
+                class="divider w-1/3 mx-auto border-t-2 border-gray-400 my-1"
+              ></div>
+              <div class="rounded-2xl bg-red-600 p-4 text-white">
+                <div id="displayIMC"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Exercice PME -->
+          <div>
+            <div
+              class="card h-auto rounded-2xl bg-gray-50 flex flex-col m-4 p-4 justify-center items-center gap-2 w-full"
+            >
+              <h1 class="text-2xl">Exercice PME:</h1>
+              <h2 class="">Calcul financers d'une PME</h2>
+              <div
+                class="divider w-1/3 mx-auto border-t-2 border-gray-400 my-1"
+              ></div>
+
+              <div class="rounded-2xl bg-red-600 p-4 text-white">
+                <div id="displayPME"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer id="footer"></footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

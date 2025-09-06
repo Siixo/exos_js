@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <title>Jefff303.js</title>
+  </head>
+
+  <body class="min-h-screen bg-blue-950">
+    <div class="drawer min-h-screen">
+      <input id="drawer-toggle" type="checkbox" class="drawer-toggle" />
+      <div class="drawer-content flex flex-col min-h-screen">
+        <!-- Navbar -->
+        <div id="header"></div>
+        <!-- <h1 class="text-center text-4xl font-bold mb-4">Timeline</h1> -->
+        <!-- Main Content -->
+        <main
+          class="flex-1 container mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8"
+        >
+          <h1 class="text-4xl text-center p-4 text-white mb-4">Timeline</h1>
+          <span class="flex items-center mb-4">
+            <span class="h-px flex-1 bg-gray-300"></span>
+          </span>
+
+          <!-- La timeline sera générée ici avec ce composant DaisyUI ⬇️ -->
+          <!-- https://daisyui.com/components/timeline/#timeline-with-icon-snapped-to-the-start -->
+          <ul
+            id="timeline"
+            class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical"
+          ></ul>
+        </main>
+        <!-- Footer -->
+        <div id="footer"></div>
+      </div>
+    </div>
+    <script type="module" src="/src/exos/js/timelineFill.js" defer></script>
+  </body>
+</html>
