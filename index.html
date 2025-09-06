@@ -73,21 +73,7 @@
               Clear
             </button>
           </div>
-          <!-- Exercice 3 -->
-          <div
-            class="card h-78 rounded-2xl bg-gray-50 flex flex-col m-4 p-2 justify-center items-center gap-4"
-          >
-            <h1 class="text-2xl">Exercice 3:</h1>
-            <h2 class="">Construction d'une timeline</h2>
-            <a href="/src/exos/html/timeline.html">
-              <button
-                id="timelineButton"
-                class="inline-block rounded-sm border border-red-600 bg-red-600 px-12 py-3 m-4 text-sm font-medium text-white hover:bg-red-600/50 hover:text-red-600 focus:ring-3 focus:outline-hidden hover:cursor-pointer"
-              >
-                Voir la timeline
-              </button>
-            </a>
-          </div>
+
           <!-- Exercice IMC -->
           <div>
             <div
@@ -109,7 +95,7 @@
           <!-- Exercice PME -->
           <div>
             <div
-              class="card h-auto rounded-2xl bg-gray-50 flex flex-col m-4 p-4 justify-center items-center gap-2 w-full"
+              class="card h-78 rounded-2xl bg-gray-50 flex flex-col m-4 p-4 justify-center items-center gap-2 w-full"
             >
               <h1 class="text-2xl">Exercice PME:</h1>
               <h2 class="">Calcul financers d'une PME</h2>
@@ -122,10 +108,39 @@
               </div>
             </div>
           </div>
+          <!-- Exercice Timeline -->
+          <div
+            class="card h-auto rounded-2xl bg-gray-50 flex flex-col m-4 p-2 justify-center items-center gap-4 col-span-2"
+          >
+            <h1 class="text-2xl">Exercice 3:</h1>
+            <input id="drawer-toggle" type="checkbox" class="drawer-toggle" />
+            <div class="drawer-content flex flex-col min-h-screen">
+              <!-- <h1 class="text-center text-4xl font-bold mb-4">Timeline</h1> -->
+              <!-- Main Content -->
+              <main
+                class="flex-1 container mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8"
+              >
+                <h1 class="text-4xl text-center p-4 text-black mb-4">
+                  Timeline
+                </h1>
+                <span class="flex items-center mb-4">
+                  <span class="h-px flex-1 bg-gray-300"></span>
+                </span>
+
+                <!-- La timeline sera générée ici avec ce composant DaisyUI ⬇️ -->
+                <!-- https://daisyui.com/components/timeline/#timeline-with-icon-snapped-to-the-start -->
+                <ul
+                  id="timeline"
+                  class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical"
+                ></ul>
+              </main>
+            </div>
+          </div>
         </div>
       </div>
     </main>
     <footer id="footer"></footer>
     <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/exos/js/timelineFill.js"></script>
   </body>
 </html>
